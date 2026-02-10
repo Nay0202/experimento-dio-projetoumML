@@ -1,0 +1,148 @@
+Failure while loading azureml_run_type_providers. Failed to load entrypoint azureml.PipelineRun = azureml.pipeline.core.run:PipelineRun._from_dto with exception (azureml-core 1.47.0 (/azureml-envs/azureml_862fbd3b8df44d2c582aa46cf5a23700/lib/python3.8/site-packages), Requirement.parse('azureml-core~=1.54.0')).
+Failure while loading azureml_run_type_providers. Failed to load entrypoint azureml.ReusedStepRun = azureml.pipeline.core.run:StepRun._from_reused_dto with exception (azureml-core 1.47.0 (/azureml-envs/azureml_862fbd3b8df44d2c582aa46cf5a23700/lib/python3.8/site-packages), Requirement.parse('azureml-core~=1.54.0')).
+Failure while loading azureml_run_type_providers. Failed to load entrypoint azureml.StepRun = azureml.pipeline.core.run:StepRun._from_dto with exception (azureml-core 1.47.0 (/azureml-envs/azureml_862fbd3b8df44d2c582aa46cf5a23700/lib/python3.8/site-packages), Requirement.parse('azureml-core~=1.54.0')).
+Failure while loading azureml_run_type_providers. Failed to load entrypoint azureml.scriptrun = azureml.core.script_run:ScriptRun._from_run_dto with exception (cryptography 42.0.4 (/azureml-envs/azureml_862fbd3b8df44d2c582aa46cf5a23700/lib/python3.8/site-packages), Requirement.parse('cryptography!=1.9,!=2.0.*,!=2.1.*,!=2.2.*,<41')).
+Session_id = f1b50bef-b9b2-4a30-a508-a757b55be7fc
+Invoking module by urldecode_invoker 0.0.8.
+
+Module type: official module.
+
+Using runpy to invoke module 'azureml.studio.modulehost.module_invoker'.
+
+2026-02-10 21:44:42,676 studio.modulehost    INFO       Reset logging level to DEBUG
+2026-02-10 21:44:42,677 studio.modulehost    INFO       Load pyarrow.parquet explicitly: <module 'pyarrow.parquet' from '/azureml-envs/azureml_862fbd3b8df44d2c582aa46cf5a23700/lib/python3.8/site-packages/pyarrow/parquet/__init__.py'>
+2026-02-10 21:44:42,677 studio.core          INFO       execute_with_cli - Start:
+2026-02-10 21:44:42,677 studio.modulehost    INFO       |   ALGHOST 0.0.182
+RuntimeError: module compiled against API version 0x10 but this version of numpy is 0xf . Check the section C-API incompatibility at the Troubleshooting ImportError section at https://numpy.org/devdocs/user/troubleshooting-importerror.html#c-api-incompatibility for indications on how to solve this problem .
+IPython could not be loaded!
+2026-02-10 21:44:44,029 studio.modulehost    INFO       |   CLI arguments parsed: {'module_name': 'azureml.studio.modules.ml.train.train_generic_model.train_generic_model', 'OutputPortsInternal': {'Trained model': '/mnt/azureml/cr/j/c6fb75c6c10c485aa3d2538900bde3b2/cap/data-capability/wd/Trained_model'}, 'InputPortsInternal': {'Untrained model': '/mnt/azureml/cr/j/c6fb75c6c10c485aa3d2538900bde3b2/cap/data-capability/wd/INPUT_Untrained_model', 'Dataset': '/mnt/azureml/cr/j/c6fb75c6c10c485aa3d2538900bde3b2/cap/data-capability/wd/INPUT_Dataset'}, 'ModuleParameters': {'Label column': '%7B%22isFilter%22%3Atrue%2C%22rules%22%3A%5B%7B%22exclude%22%3Afalse%2C%22ruleType%22%3A%22ColumnNames%22%2C%22columns%22%3A%5B%22Vendas%22%5D%7D%5D%7D', 'Model explanations': 'False'}}
+2026-02-10 21:44:44,229 studio.modulehost    INFO       |   Invoking ModuleEntry(azureml.studio.modules.ml.train.train_generic_model.train_generic_model; TrainModelModule; run)
+2026-02-10 21:44:44,230 studio.core          DEBUG      |   Input Ports:
+2026-02-10 21:44:44,230 studio.core          DEBUG      |   |   Untrained model = <azureml.studio.modulehost.cli_parser.CliInputValue object at 0xae0aa60d3a0>
+2026-02-10 21:44:44,230 studio.core          DEBUG      |   |   Dataset = <azureml.studio.modulehost.cli_parser.CliInputValue object at 0xae0aa60d430>
+2026-02-10 21:44:44,230 studio.core          DEBUG      |   Output Ports:
+2026-02-10 21:44:44,230 studio.core          DEBUG      |   |   Trained model = /mnt/azureml/cr/j/c6fb75c6c10c485aa3d2538900bde3b2/cap/data-capability/wd/Trained_model
+2026-02-10 21:44:44,230 studio.core          DEBUG      |   Parameters:
+2026-02-10 21:44:44,230 studio.core          DEBUG      |   |   Label column = %7B%22isFilter%22%3Atrue%2C%22rules%22%3A%5B%7B%22exclude%22%3Afalse%2C%22ruleType%22%3A%22ColumnNames%22%2C%22columns%22%3A%5B%22Vendas%22%5D%7D%5D%7D
+2026-02-10 21:44:44,230 studio.core          DEBUG      |   |   Model explanations = False
+2026-02-10 21:44:44,231 studio.core          DEBUG      |   Environment Variables:
+2026-02-10 21:44:44,231 studio.core          DEBUG      |   |   AZUREML_DATAREFERENCE_DATASET = /mnt/azureml/cr/j/c6fb75c6c10c485aa3d2538900bde3b2/cap/data-capability/wd/INPUT_Dataset
+2026-02-10 21:44:44,231 studio.core          DEBUG      |   |   AZUREML_DATAREFERENCE_Dataset = /mnt/azureml/cr/j/c6fb75c6c10c485aa3d2538900bde3b2/cap/data-capability/wd/INPUT_Dataset
+2026-02-10 21:44:44,231 studio.core          DEBUG      |   |   AZUREML_DATAREFERENCE_UNTRAINED_MODEL = /mnt/azureml/cr/j/c6fb75c6c10c485aa3d2538900bde3b2/cap/data-capability/wd/INPUT_Untrained_model
+2026-02-10 21:44:44,231 studio.core          DEBUG      |   |   AZUREML_DATAREFERENCE_Untrained_model = /mnt/azureml/cr/j/c6fb75c6c10c485aa3d2538900bde3b2/cap/data-capability/wd/INPUT_Untrained_model
+2026-02-10 21:44:44,231 studio.core          INFO       |   Reflect input ports and parameters - Start:
+2026-02-10 21:44:44,231 studio.core          INFO       |   |   Handle input port "Untrained model" - Start:
+2026-02-10 21:44:44,231 studio.core          INFO       |   |   |   Mount/Download dataset to '/mnt/azureml/cr/j/c6fb75c6c10c485aa3d2538900bde3b2/cap/data-capability/wd/INPUT_Untrained_model' - Start:
+2026-02-10 21:44:44,231 studio.modulehost    DEBUG      |   |   |   |   Content of directory /mnt/azureml/cr/j/c6fb75c6c10c485aa3d2538900bde3b2/cap/data-capability/wd/INPUT_Untrained_model:
+2026-02-10 21:44:44,237 studio.modulehost    DEBUG      |   |   |   |   |   _meta.yaml
+2026-02-10 21:44:44,237 studio.modulehost    DEBUG      |   |   |   |   |   data.ilearner
+2026-02-10 21:44:44,237 studio.modulehost    DEBUG      |   |   |   |   |   model_spec.yaml
+2026-02-10 21:44:44,237 studio.core          INFO       |   |   |   Mount/Download dataset to '/mnt/azureml/cr/j/c6fb75c6c10c485aa3d2538900bde3b2/cap/data-capability/wd/INPUT_Untrained_model' - End with 0.0060s elapsed.
+2026-02-10 21:44:44,242 studio.core          INFO       |   |   |   Try to read from /mnt/azureml/cr/j/c6fb75c6c10c485aa3d2538900bde3b2/cap/data-capability/wd/INPUT_Untrained_model via meta - Start:
+2026-02-10 21:44:44,277 studio.common        INFO       |   |   |   |   Load meta data from directory successfully, data=ModelDirectory(meta={'type': 'ModelDirectory', 'extension': {}, 'model': 'model_spec.yaml'}), type=<class 'azureml.studio.core.io.model_directory.ModelDirectory'>
+2026-02-10 21:44:44,277 studio.common        INFO       |   |   |   |   Load ModelDirectory successfully, data=<azureml.studio.modules.ml.initialize_models.regressor.linear_regressor.linear_regressor.OrdinaryLeastSquaresRegressor object at 0xae0aa60d3d0>
+2026-02-10 21:44:44,277 studio.core          INFO       |   |   |   Try to read from /mnt/azureml/cr/j/c6fb75c6c10c485aa3d2538900bde3b2/cap/data-capability/wd/INPUT_Untrained_model via meta - End with 0.0353s elapsed.
+2026-02-10 21:44:44,277 studio.core          INFO       |   |   Handle input port "Untrained model" - End with 0.0461s elapsed.
+2026-02-10 21:44:44,277 studio.core          INFO       |   |   Handle input port "Dataset" - Start:
+2026-02-10 21:44:44,277 studio.core          INFO       |   |   |   Mount/Download dataset to '/mnt/azureml/cr/j/c6fb75c6c10c485aa3d2538900bde3b2/cap/data-capability/wd/INPUT_Dataset' - Start:
+2026-02-10 21:44:44,277 studio.modulehost    DEBUG      |   |   |   |   Content of directory /mnt/azureml/cr/j/c6fb75c6c10c485aa3d2538900bde3b2/cap/data-capability/wd/INPUT_Dataset:
+2026-02-10 21:44:44,289 studio.modulehost    DEBUG      |   |   |   |   |   _meta.yaml
+2026-02-10 21:44:44,289 studio.modulehost    DEBUG      |   |   |   |   |   _samples.json
+2026-02-10 21:44:44,289 studio.modulehost    DEBUG      |   |   |   |   |   data.dataset
+2026-02-10 21:44:44,289 studio.modulehost    DEBUG      |   |   |   |   |   data.dataset.parquet
+2026-02-10 21:44:44,289 studio.modulehost    DEBUG      |   |   |   |   |   data.visualization
+2026-02-10 21:44:44,293 studio.modulehost    DEBUG      |   |   |   |   |   schema/_schema.json
+2026-02-10 21:44:44,293 studio.core          INFO       |   |   |   Mount/Download dataset to '/mnt/azureml/cr/j/c6fb75c6c10c485aa3d2538900bde3b2/cap/data-capability/wd/INPUT_Dataset' - End with 0.0157s elapsed.
+2026-02-10 21:44:44,297 studio.core          INFO       |   |   |   Try to read from /mnt/azureml/cr/j/c6fb75c6c10c485aa3d2538900bde3b2/cap/data-capability/wd/INPUT_Dataset via meta - Start:
+2026-02-10 21:44:44,419 studio.common        INFO       |   |   |   |   Load DataTableMeta successfully, path=data.dataset
+2026-02-10 21:44:44,421 studio.common        INFO       |   |   |   |   Load meta data from directory successfully, data=DataFrameDirectory(meta={'type': 'DataFrameDirectory', 'visualization': [{'type': 'Visualization', 'path': 'data.visualization'}], 'extension': {'DataTableMeta': 'data.dataset'}, 'format': 'Parquet', 'data': 'data.dataset.parquet', 'samples': '_samples.json', 'schema': 'schema/_schema.json'}), type=<class 'azureml.studio.common.datatable.data_table_directory.DataTableDirectory'>
+2026-02-10 21:44:44,440 studio.core          INFO       |   |   |   Try to read from /mnt/azureml/cr/j/c6fb75c6c10c485aa3d2538900bde3b2/cap/data-capability/wd/INPUT_Dataset via meta - End with 0.1419s elapsed.
+2026-02-10 21:44:44,440 studio.core          INFO       |   |   Handle input port "Dataset" - End with 0.1626s elapsed.
+2026-02-10 21:44:44,440 studio.modulehost    INFO       |   |   Parse ColumnSelection parameter
+2026-02-10 21:44:44,440 studio.modulehost    INFO       |   |   Parse bool parameter
+2026-02-10 21:44:44,440 studio.core          INFO       |   Reflect input ports and parameters - End with 0.2093s elapsed.
+2026-02-10 21:44:44,440 studio.core          INFO       |   TrainModelModule.run - Start:
+2026-02-10 21:44:44,440 studio.core          DEBUG      |   |   kwargs:
+2026-02-10 21:44:44,440 studio.core          DEBUG      |   |   |   learner = <azureml.studio.modules.ml.initialize_models.regressor.linear_regressor.linear_regressor.OrdinaryLeastSquaresRegressor object at 0xae0aa60d3d0>
+2026-02-10 21:44:44,440 studio.core          DEBUG      |   |   |   training_data = <azureml.studio.common.datatable.data_table.DataTable object at 0xae0aa1d6700>
+2026-02-10 21:44:44,440 studio.core          DEBUG      |   |   |   label_column_index_or_name = <azureml.studio.common.datatable.data_table.DataTableColumnSelection object at 0xae0aa5b3520>
+2026-02-10 21:44:44,440 studio.core          DEBUG      |   |   |   model_explanations = False
+2026-02-10 21:44:44,441 studio.core          DEBUG      |   |   validated_args:
+2026-02-10 21:44:44,441 studio.core          DEBUG      |   |   |   learner = <azureml.studio.modules.ml.initialize_models.regressor.linear_regressor.linear_regressor.OrdinaryLeastSquaresRegressor object at 0xae0aa60d3d0>
+2026-02-10 21:44:44,441 studio.core          DEBUG      |   |   |   training_data = <azureml.studio.common.datatable.data_table.DataTable object at 0xae0aa1d6700>
+2026-02-10 21:44:44,441 studio.core          DEBUG      |   |   |   label_column_index_or_name = <azureml.studio.common.datatable.data_table.DataTableColumnSelection object at 0xae0aa5b3520>
+2026-02-10 21:44:44,441 studio.core          DEBUG      |   |   |   model_explanations = False
+2026-02-10 21:44:44,441 studio.module        INFO       |   |   Validate input data (learner and training data).
+2026-02-10 21:44:44,441 studio.core          INFO       |   |   Create deployment handler and inject schema and sample. - Start:
+2026-02-10 21:44:44,442 studio.core          INFO       |   |   Create deployment handler and inject schema and sample. - End with 0.0009s elapsed.
+2026-02-10 21:44:44,442 studio.core          INFO       |   |   BaseLearner.train - Start:
+2026-02-10 21:44:44,442 studio.module        INFO       |   |   |   Vendas as Label Column.
+2026-02-10 21:44:44,444 studio.core          INFO       |   |   |   Removing instances with illegal label - Start:
+2026-02-10 21:44:44,444 studio.module        INFO       |   |   |   |   Remove missing label instances.
+2026-02-10 21:44:44,449 studio.core          INFO       |   |   |   Removing instances with illegal label - End with 0.0051s elapsed.
+2026-02-10 21:44:44,449 studio.module        INFO       |   |   |   validated training data has 20 Row(s) and 2 Columns.
+2026-02-10 21:44:44,449 studio.core          INFO       |   |   |   BaseLearner._normalize_data - Start:
+2026-02-10 21:44:44,450 studio.core          INFO       |   |   |   |   BaseLearner._fit_normalize - Start:
+2026-02-10 21:44:44,450 studio.core          INFO       |   |   |   |   |   Initialing feature normalizer - Start:
+2026-02-10 21:44:44,450 studio.module        INFO       |   |   |   |   |   |   Building Normalizer - found Label column=Vendas with encode_label=False
+2026-02-10 21:44:44,450 studio.module        INFO       |   |   |   |   |   |   Building normalizer - found 1 feature columns with normalize_number=True
+2026-02-10 21:44:44,450 studio.module        DEBUG      |   |   |   |   |   |   Building normalizer - found feature columns: "Temperatura (°C)".
+2026-02-10 21:44:44,450 studio.module        INFO       |   |   |   |   |   |   Building normalizer - found 1 numeric feature columns and 0 string feature columns to be encoded
+2026-02-10 21:44:44,450 studio.module        DEBUG      |   |   |   |   |   |   Building normalizer - found numeric feature columns to be encoded: "Temperatura (°C)".
+2026-02-10 21:44:44,450 studio.module        DEBUG      |   |   |   |   |   |   Building normalizer - found string feature columns to be encoded: "".
+2026-02-10 21:44:44,450 studio.core          INFO       |   |   |   |   |   Initialing feature normalizer - End with 0.0004s elapsed.
+2026-02-10 21:44:44,450 studio.core          INFO       |   |   |   |   |   Fitting feature normalizer - Start:
+2026-02-10 21:44:44,450 studio.core          INFO       |   |   |   |   |   |   Normalizer._fit_numeric_feature_column_encoders - Start:
+2026-02-10 21:44:44,451 studio.module        INFO       |   |   |   |   |   |   |   Successfully fit 1 numeric feature column encoders.
+2026-02-10 21:44:44,452 studio.core          INFO       |   |   |   |   |   |   Normalizer._fit_numeric_feature_column_encoders - End with 0.0014s elapsed.
+2026-02-10 21:44:44,452 studio.core          INFO       |   |   |   |   |   Fitting feature normalizer - End with 0.0015s elapsed.
+2026-02-10 21:44:44,452 studio.core          INFO       |   |   |   |   BaseLearner._fit_normalize - End with 0.0021s elapsed.
+2026-02-10 21:44:44,452 studio.core          INFO       |   |   |   |   BaseLearner._apply_normalize - Start:
+2026-02-10 21:44:44,452 studio.core          INFO       |   |   |   |   |   Applying feature normalization - Start:
+2026-02-10 21:44:44,452 studio.module        INFO       |   |   |   |   |   |   Start to execute normalizer.transform with column_list: "Vendas,Temperatura (°C)".
+2026-02-10 21:44:44,452 studio.module        INFO       |   |   |   |   |   |   Columns of input DataFrame: 2
+2026-02-10 21:44:44,452 studio.module        INFO       |   |   |   |   |   |   Columns to be transformed: 2
+2026-02-10 21:44:44,452 studio.module        INFO       |   |   |   |   |   |   Columns to be encoded: 1
+2026-02-10 21:44:44,452 studio.module        INFO       |   |   |   |   |   |   Transform with label column Vendas.
+2026-02-10 21:44:44,452 studio.core          INFO       |   |   |   |   |   |   Normalizer._transform_numeric_feature_columns - Start:
+2026-02-10 21:44:44,453 studio.module        INFO       |   |   |   |   |   |   |   Successfully encoded 1 numeric feature columns.
+2026-02-10 21:44:44,453 studio.core          INFO       |   |   |   |   |   |   Normalizer._transform_numeric_feature_columns - End with 0.0008s elapsed.
+2026-02-10 21:44:44,453 studio.module        INFO       |   |   |   |   |   |   Construct train set complete.
+2026-02-10 21:44:44,453 studio.core          INFO       |   |   |   |   |   Applying feature normalization - End with 0.0012s elapsed.
+2026-02-10 21:44:44,453 studio.core          INFO       |   |   |   |   BaseLearner._apply_normalize - End with 0.0013s elapsed.
+2026-02-10 21:44:44,453 studio.core          INFO       |   |   |   BaseLearner._normalize_data - End with 0.0035s elapsed.
+2026-02-10 21:44:44,453 studio.core          INFO       |   |   |   Initializing model - Start:
+2026-02-10 21:44:44,453 studio.core          INFO       |   |   |   Initializing model - End with 0.0000s elapsed.
+2026-02-10 21:44:44,453 studio.core          INFO       |   |   |   BaseLearner._train - Start:
+2026-02-10 21:44:44,453 studio.core          INFO       |   |   |   |   Training Model - Start:
+2026-02-10 21:44:44,455 studio.core          INFO       |   |   |   |   Training Model - End with 0.0015s elapsed.
+2026-02-10 21:44:44,455 studio.core          INFO       |   |   |   BaseLearner._train - End with 0.0017s elapsed.
+2026-02-10 21:44:44,455 studio.core          INFO       |   |   BaseLearner.train - End with 0.0131s elapsed.
+2026-02-10 21:44:44,455 studio.core          DEBUG      |   |   return:
+2026-02-10 21:44:44,455 studio.core          DEBUG      |   |   |   [0] = <azureml.studio.modules.ml.initialize_models.regressor.linear_regressor.linear_regressor.OrdinaryLeastSquaresRegressor object at 0xae0aa60d3d0>
+2026-02-10 21:44:44,455 studio.core          INFO       |   TrainModelModule.run - End with 0.0149s elapsed.
+2026-02-10 21:44:44,455 studio.core          INFO       |   ModuleReflector._handle_output_ports - Start:
+2026-02-10 21:44:44,455 studio.core          INFO       |   |   Handle output port "Trained model" - Start:
+2026-02-10 21:44:44,455 studio.modulehost    INFO       |   |   |   Data type: ILearnerDotNet
+2026-02-10 21:44:44,455 studio.modulehost    INFO       |   |   |   Create directory: '/mnt/azureml/cr/j/c6fb75c6c10c485aa3d2538900bde3b2/cap/data-capability/wd/Trained_model'
+2026-02-10 21:44:44,456 studio.core          INFO       |   |   |   Dump file data.ilearner - Start:
+2026-02-10 21:44:44,456 studio.modulehost    INFO       |   |   |   |   Write learner
+2026-02-10 21:44:44,456 studio.core          INFO       |   |   |   Dump file data.ilearner - End with 0.0005s elapsed.
+2026-02-10 21:44:45,040 studio.common        INFO       |   |   |   Writing meta successfully, datatype=DataTypes.LEARNER
+2026-02-10 21:44:45,041 studio.core          INFO       |   |   Handle output port "Trained model" - End with 0.5854s elapsed.
+2026-02-10 21:44:45,041 studio.core          INFO       |   ModuleReflector._handle_output_ports - End with 0.5856s elapsed.
+2026-02-10 21:44:45,041 studio.core          INFO       |   ModuleStatistics.save_to_azureml - Start:
+2026-02-10 21:44:45,260 studio.core          INFO       |   ModuleStatistics.save_to_azureml - End with 0.2191s elapsed.
+2026-02-10 21:44:45,261 studio.core          INFO       execute_with_cli - End with 2.5838s elapsed.
+Cleaning up all outstanding Run operations, waiting 300.0 seconds
+1 items cleaning up...
+Cleanup took 0.05687308311462402 seconds
+Traceback (most recent call last):
+  File "urldecode_invoker.py", line 130, in <module>
+    execute(decoded_args)
+  File "urldecode_invoker.py", line 74, in execute
+    exit(ret)
+  File "/azureml-envs/azureml_862fbd3b8df44d2c582aa46cf5a23700/lib/python3.8/_sitebuiltins.py", line 26, in __call__
+    raise SystemExit(code)
+SystemExit: 0
+

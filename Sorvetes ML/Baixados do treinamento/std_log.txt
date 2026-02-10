@@ -1,0 +1,84 @@
+Failure while loading azureml_run_type_providers. Failed to load entrypoint azureml.PipelineRun = azureml.pipeline.core.run:PipelineRun._from_dto with exception (azureml-core 1.47.0 (/azureml-envs/azureml_862fbd3b8df44d2c582aa46cf5a23700/lib/python3.8/site-packages), Requirement.parse('azureml-core~=1.54.0')).
+Failure while loading azureml_run_type_providers. Failed to load entrypoint azureml.ReusedStepRun = azureml.pipeline.core.run:StepRun._from_reused_dto with exception (azureml-core 1.47.0 (/azureml-envs/azureml_862fbd3b8df44d2c582aa46cf5a23700/lib/python3.8/site-packages), Requirement.parse('azureml-core~=1.54.0')).
+Failure while loading azureml_run_type_providers. Failed to load entrypoint azureml.StepRun = azureml.pipeline.core.run:StepRun._from_dto with exception (azureml-core 1.47.0 (/azureml-envs/azureml_862fbd3b8df44d2c582aa46cf5a23700/lib/python3.8/site-packages), Requirement.parse('azureml-core~=1.54.0')).
+Failure while loading azureml_run_type_providers. Failed to load entrypoint azureml.scriptrun = azureml.core.script_run:ScriptRun._from_run_dto with exception (cryptography 42.0.4 (/azureml-envs/azureml_862fbd3b8df44d2c582aa46cf5a23700/lib/python3.8/site-packages), Requirement.parse('cryptography!=1.9,!=2.0.*,!=2.1.*,!=2.2.*,<41')).
+Session_id = c6306e44-001b-40c0-9518-a8f7e2a11a7a
+Invoking module by urldecode_invoker 0.0.8.
+
+Module type: official module.
+
+Using runpy to invoke module 'azureml.studio.modulehost.module_invoker'.
+
+2026-02-10 21:28:26,874 studio.modulehost    INFO       Reset logging level to DEBUG
+2026-02-10 21:28:26,874 studio.modulehost    INFO       Load pyarrow.parquet explicitly: <module 'pyarrow.parquet' from '/azureml-envs/azureml_862fbd3b8df44d2c582aa46cf5a23700/lib/python3.8/site-packages/pyarrow/parquet/__init__.py'>
+2026-02-10 21:28:26,874 studio.core          INFO       execute_with_cli - Start:
+2026-02-10 21:28:26,874 studio.modulehost    INFO       |   ALGHOST 0.0.182
+2026-02-10 21:28:27,785 studio.modulehost    INFO       |   CLI arguments parsed: {'module_name': 'azureml.studio.modules.ml.initialize_models.regressor.linear_regressor.linear_regressor', 'OutputPortsInternal': {'Untrained model': '/mnt/azureml/cr/j/683c78ad51f345e88f0abaf21f1909b8/cap/data-capability/wd/Untrained_model'}, 'ModuleParameters': {'Solution method': 'Ordinary Least Squares', 'L2 regularization weight': '0.001', 'Include intercept term': 'True', 'Random number seed': '1'}}
+2026-02-10 21:28:28,027 studio.modulehost    INFO       |   Invoking ModuleEntry(azureml.studio.modules.ml.initialize_models.regressor.linear_regressor.linear_regressor; LinearRegressionModule; run)
+2026-02-10 21:28:28,027 studio.core          DEBUG      |   Input Ports:
+2026-02-10 21:28:28,027 studio.core          DEBUG      |   |   (empty)
+2026-02-10 21:28:28,027 studio.core          DEBUG      |   Output Ports:
+2026-02-10 21:28:28,027 studio.core          DEBUG      |   |   Untrained model = /mnt/azureml/cr/j/683c78ad51f345e88f0abaf21f1909b8/cap/data-capability/wd/Untrained_model
+2026-02-10 21:28:28,027 studio.core          DEBUG      |   Parameters:
+2026-02-10 21:28:28,027 studio.core          DEBUG      |   |   Solution method = Ordinary Least Squares
+2026-02-10 21:28:28,027 studio.core          DEBUG      |   |   L2 regularization weight = 0.001
+2026-02-10 21:28:28,027 studio.core          DEBUG      |   |   Include intercept term = True
+2026-02-10 21:28:28,027 studio.core          DEBUG      |   |   Random number seed = 1
+2026-02-10 21:28:28,027 studio.core          DEBUG      |   Environment Variables:
+2026-02-10 21:28:28,027 studio.core          DEBUG      |   |   (empty)
+2026-02-10 21:28:28,027 studio.core          INFO       |   Reflect input ports and parameters - Start:
+2026-02-10 21:28:28,028 studio.modulehost    INFO       |   |   Parse enum parameter
+2026-02-10 21:28:28,028 studio.modulehost    INFO       |   |   Parse float parameter
+2026-02-10 21:28:28,028 studio.modulehost    INFO       |   |   Parse int parameter
+2026-02-10 21:28:28,028 studio.modulehost    INFO       |   |   Parse bool parameter
+2026-02-10 21:28:28,028 studio.core          INFO       |   Reflect input ports and parameters - End with 0.0003s elapsed.
+2026-02-10 21:28:28,028 studio.core          INFO       |   LinearRegressionModule.run - Start:
+2026-02-10 21:28:28,028 studio.core          DEBUG      |   |   kwargs:
+2026-02-10 21:28:28,028 studio.core          DEBUG      |   |   |   solution_method = <CreateLinearRegressionModelSolutionMethod.OrdinaryLeastSquares: 2>
+2026-02-10 21:28:28,028 studio.core          DEBUG      |   |   |   l2_regularizer_weight_ols = 0.001
+2026-02-10 21:28:28,028 studio.core          DEBUG      |   |   |   random_number_seed = 1
+2026-02-10 21:28:28,028 studio.core          DEBUG      |   |   |   bias = True
+2026-02-10 21:28:28,028 studio.core          DEBUG      |   |   validated_args:
+2026-02-10 21:28:28,028 studio.core          DEBUG      |   |   |   solution_method = <CreateLinearRegressionModelSolutionMethod.OrdinaryLeastSquares: 2>
+2026-02-10 21:28:28,028 studio.core          DEBUG      |   |   |   l2_regularizer_weight_ols = 0.001
+2026-02-10 21:28:28,028 studio.core          DEBUG      |   |   |   random_number_seed = 1
+2026-02-10 21:28:28,028 studio.core          DEBUG      |   |   |   bias = True
+2026-02-10 21:28:28,028 studio.core          DEBUG      |   |   |   mode = None
+2026-02-10 21:28:28,028 studio.core          DEBUG      |   |   |   normalize_features = None
+2026-02-10 21:28:28,028 studio.core          DEBUG      |   |   |   averaged = None
+2026-02-10 21:28:28,028 studio.core          DEBUG      |   |   |   learning_rate = None
+2026-02-10 21:28:28,028 studio.core          DEBUG      |   |   |   num_iterations = None
+2026-02-10 21:28:28,029 studio.core          DEBUG      |   |   |   ps_learning_rate = None
+2026-02-10 21:28:28,029 studio.core          DEBUG      |   |   |   ps_num_iterations = None
+2026-02-10 21:28:28,029 studio.core          DEBUG      |   |   |   decrease_learning_rate = None
+2026-02-10 21:28:28,029 studio.core          DEBUG      |   |   |   l2_regularizer_weight_ogd = None
+2026-02-10 21:28:28,029 studio.core          DEBUG      |   |   |   ps_l2_regularizer_weight = None
+2026-02-10 21:28:28,029 studio.core          DEBUG      |   |   |   allow_unknown_levels = None
+2026-02-10 21:28:28,029 studio.core          DEBUG      |   |   return:
+2026-02-10 21:28:28,029 studio.core          DEBUG      |   |   |   [0] = <azureml.studio.modules.ml.initialize_models.regressor.linear_regressor.linear_regressor.OrdinaryLeastSquaresRegressor object at 0xa8884895e20>
+2026-02-10 21:28:28,029 studio.core          INFO       |   LinearRegressionModule.run - End with 0.0010s elapsed.
+2026-02-10 21:28:28,029 studio.core          INFO       |   ModuleReflector._handle_output_ports - Start:
+2026-02-10 21:28:28,029 studio.core          INFO       |   |   Handle output port "Untrained model" - Start:
+2026-02-10 21:28:28,029 studio.modulehost    INFO       |   |   |   Data type: ILearnerDotNet
+2026-02-10 21:28:28,029 studio.modulehost    INFO       |   |   |   Create directory: '/mnt/azureml/cr/j/683c78ad51f345e88f0abaf21f1909b8/cap/data-capability/wd/Untrained_model'
+2026-02-10 21:28:28,029 studio.core          INFO       |   |   |   Dump file data.ilearner - Start:
+2026-02-10 21:28:28,029 studio.modulehost    INFO       |   |   |   |   Write learner
+2026-02-10 21:28:28,030 studio.core          INFO       |   |   |   Dump file data.ilearner - End with 0.0002s elapsed.
+2026-02-10 21:28:28,031 studio.common        INFO       |   |   |   Writing meta successfully, datatype=DataTypes.LEARNER
+2026-02-10 21:28:28,031 studio.core          INFO       |   |   Handle output port "Untrained model" - End with 0.0024s elapsed.
+2026-02-10 21:28:28,031 studio.core          INFO       |   ModuleReflector._handle_output_ports - End with 0.0025s elapsed.
+2026-02-10 21:28:28,031 studio.core          INFO       |   ModuleStatistics.save_to_azureml - Start:
+2026-02-10 21:28:28,309 studio.core          INFO       |   ModuleStatistics.save_to_azureml - End with 0.2770s elapsed.
+2026-02-10 21:28:28,309 studio.core          INFO       execute_with_cli - End with 1.4352s elapsed.
+Cleaning up all outstanding Run operations, waiting 300.0 seconds
+1 items cleaning up...
+Cleanup took 0.09423661231994629 seconds
+Traceback (most recent call last):
+  File "urldecode_invoker.py", line 130, in <module>
+    execute(decoded_args)
+  File "urldecode_invoker.py", line 74, in execute
+    exit(ret)
+  File "/azureml-envs/azureml_862fbd3b8df44d2c582aa46cf5a23700/lib/python3.8/_sitebuiltins.py", line 26, in __call__
+    raise SystemExit(code)
+SystemExit: 0
+
